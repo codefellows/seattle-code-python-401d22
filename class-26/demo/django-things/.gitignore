@@ -1,0 +1,5 @@
+.venv
+.idea
+__pycache__
+package-lock.json
+static/CACHE
