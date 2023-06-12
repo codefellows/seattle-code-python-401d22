@@ -40,27 +40,29 @@ things = [
 
 
 def guess_a_thing(riddle_index):
+    # Create a function that takes a riddle index
 
     thing = things[riddle_index]
+    # assigning the thing variable to look at the list things and gra the index passed in.
 
     success = False
+    # assign the variable success to False
 
     guess = input("I spy with my little eye... ")
+    # assign the guess variable to user input
 
     hints = thing["hints"]
+    # assigning the variable hints and assigning the property from the thing with te hints property.
 
     correct_answer = thing["name"]
+    # assigning the correct answer to
 
     while len(hints):
-
         if guess == correct_answer:
             success = True
             break
-
         hint = hints.pop(0)
-
         print(f"Nope, but here's a hint - {hint}")
-
         guess = input("I spy with my little eye... ")
 
     if success or guess == correct_answer:
