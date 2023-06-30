@@ -1,0 +1,27 @@
+Root of the Binary Tree: 4
+
+walk(4, [])
+    value_list=[4]
+    walk(7, [4])
+        value_list[4, 7]
+        walk(3, [4, 7])
+            value_list = [4, 7, 3]
+                walk(None, [4, 7, 3])
+                walk(None, [4, 7, 3])
+
+        walk(1, [4, 7, 3])
+            value_list = [4, 7, 3, 1]
+                walk(None, [4, 7, 3, 1])
+                walk(None, [4, 7, 3, 1])
+
+    walk(18, [4, 7, 3, 1])
+        value_list = [4, 7, 3, 1, 18]
+
+        walk(5, [4, 7, 3, 1, 18])
+            value_list = [4, 7, 3, 1, 18, 5]
+                walk(None, [4, 7, 3, 1, 18, 5])
+                walk(None, [4, 7, 3, 1, 18, 5])
+        walk(11, [4, 7, 3, 1, 18, 5])
+            value_list = [4, 7, 3, 1, 18, 5, 11]
+                walk(None, [4, 7, 3, 1, 18, 5, 11])
+                walk(None, [4, 7, 3, 1, 18, 5, 11])
