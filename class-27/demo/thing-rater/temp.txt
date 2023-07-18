@@ -1,0 +1,16 @@
+SELECT * FROM users WHERE school = "CodeFellows';
+
+things
+
+id |   Nname | Rating | ReviewerI
+---------------------------------
+1  |  thing1 | 2      | admin
+2  |  thing2 | 5      | admin2
+
+
+id
+
+id |   SI    |   Student Info
+1  |     1   |     Enrolled
+2  |     745 |     Enrolled
+3  |   01734 |     Enrolled
