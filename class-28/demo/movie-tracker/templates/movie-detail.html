@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Movie: {{ movie.name }}</h1>
+  <p>Description: {{ movie.description }}</p>
+  <p>Owner: {{ movie.owner }}
+  <p><a href="{% url 'update_view' movie.pk %}">Update Movie</a></p>
+  <p><a href="{% url 'delete_view' movie.pk %}">Delete Movie</a></p>
+
+{% endblock content %}
+

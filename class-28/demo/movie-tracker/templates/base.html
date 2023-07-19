@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+  <title>My Movies</title>
+  <link rel="stylesheet" href="{% static 'base.css' %}">
+</head>
+<body>
+  <header>
+    <a href="{% url 'create_view' %}">+ New Movie</a>
+    <a href="{% url 'list_view' %}">List of Movies</a>
+  </header>
+  <main>
+    {% block content %}
+        <h2>Someone forgot to put content</h2>
+    {% endblock content %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
