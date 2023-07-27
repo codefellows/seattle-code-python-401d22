@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Thing List</h1>
+  {% for thing in things %}
+    <p><a href="{% url 'thing_detail' thing.pk %}">{{ thing.name }}</a></p>
+  {%  endfor %}
+{% endblock content %}
