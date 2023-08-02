@@ -50,7 +50,13 @@ export default function Home() {
                         {/* conditional rendering */}
                         {
                             magicReplies.length > 0
-                                ? magicReplies.map((magicReply))
+                                ? magicReplies.map((magicReply, idx) => {
+                                    return (
+                                        <tr>
+                                            <td>{magicReply}</td>
+                                        </tr>
+                                    )
+                                })
                                 : <tr>
                                     <td>Thinking...</td>
                                 </tr>
