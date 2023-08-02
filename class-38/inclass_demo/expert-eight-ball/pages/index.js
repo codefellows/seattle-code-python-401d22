@@ -62,7 +62,7 @@ export default function Home() {
                                             {magicReply.id}
                                         </td>
                                         <td className="p-2 border border-black">
-                                            {magicReply.reply}
+                                            {magicReply.question}
                                         </td>
                                         <td className="p-2 border border-black">
                                             {magicReply.reply}
