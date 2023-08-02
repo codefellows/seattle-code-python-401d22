@@ -2,6 +2,9 @@ import Head from 'next/head';
 import { replies } from '@/data';
 import { useState } from "react";
 
+// New
+import Header from '@/components/Header';
+
 export default function Home() {
     const [question, setQuestion] = useState('Ask me anything...');
     const [reply, setReply] = useState("Thinking...");
