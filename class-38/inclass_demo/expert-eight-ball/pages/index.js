@@ -5,6 +5,7 @@ import { useState } from "react";
 // New
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EightBall from '@/components/EightBall';
 
 export default function Home() {
     const [question, setQuestion] = useState('Ask me anything...');
@@ -37,7 +38,7 @@ export default function Home() {
                 </form>
 
                 {/* Eight Ball */}
-                <Eightball />
+                <EightBall  />
 
                 {/* Answer(Table) */}
                 <p className="text-xl text-center">{reply}</p>
