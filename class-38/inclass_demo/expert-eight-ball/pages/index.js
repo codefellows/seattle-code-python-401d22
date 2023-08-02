@@ -54,7 +54,7 @@ export default function Home() {
                     </thead>
                     <tbody>
                         {/* conditional rendering */}
-                        {magicReplies.length > 0 ? (
+                        {
                             magicReplies.map((magicReply, idx) => {
                                 return (
                                     <tr key={idx}>
@@ -70,13 +70,6 @@ export default function Home() {
                                     </tr>
                                 );
                             })
-                        ) : (
-                            <tr>
-                                <td className="p-2 border border-black">
-                                    Thinking...
-                                </td>
-                            </tr>
-                        )}
                     </tbody>
                 </table>
             </main>
