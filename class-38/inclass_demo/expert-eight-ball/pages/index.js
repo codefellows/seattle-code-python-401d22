@@ -42,10 +42,12 @@ export default function Home() {
                 {/* Answer(Table) */}
                 <table>
                     <thead>
-
+                        <tr>
+                            <th>Answers:</th>
+                        </tr>
                     </thead>
                     <tbody>
-                        
+                        {/* conditional rendering */}
                     </tbody>
                 </table>
 
