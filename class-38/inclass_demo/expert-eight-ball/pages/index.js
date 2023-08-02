@@ -41,6 +41,7 @@ export default function Home() {
                     </div>
                 </div>
 
+                {/* Answer(Table) */}
                 <p className="text-xl text-center">{reply}</p>
 
             </main>
