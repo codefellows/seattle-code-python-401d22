@@ -48,6 +48,11 @@ export default function Home() {
                     </thead>
                     <tbody>
                         {/* conditional rendering */}
+                        {
+                            magicReplies.length > 0
+                                ? magicReplies.map()
+                                :
+                        }
                     </tbody>
                 </table>
 
