@@ -6,6 +6,7 @@ import { useState } from "react";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EightBall from '@/components/EightBall';
+import QuestionForm from '@/components/QuestionForm';
 
 export default function Home() {
     const [question, setQuestion] = useState('Ask me anything...');
@@ -32,7 +33,7 @@ export default function Home() {
             <main className="flex flex-col items-center py-4 space-y-8">
 
                 {/* QuestionForm */}
-                <QuestionForm />
+                <QuestionForm questionAskedHandler={questionAskedHandler} />
 
                 {/* Eight Ball */}
                 <EightBall question={question} />
