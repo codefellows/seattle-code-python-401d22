@@ -45,7 +45,7 @@ export default function Home() {
                 <EightBall question={question} />
 
                 {/* RepliesTable */}
-
+                <RepliesTable magicReplies={magicReplies} />
             </main>
 
             {/* Footer */}
