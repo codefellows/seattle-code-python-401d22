@@ -25,7 +25,7 @@ export default function Home() {
             </Head>
 
             {/* Header */}
-
+            <Header />
 
             <main className="flex flex-col items-center py-4 space-y-8">
 
