@@ -40,10 +40,10 @@ export default function Home() {
                 <EightBall question={question} />
 
                 {/* Replies(Table) */}
-                <table>
+                <table className="w-1/2 mx-auto my-4 border">
                     <thead>
                         <tr>
-                            <th>Replies:</th>
+                            <th className="border border-black">Replies:</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,12 +53,12 @@ export default function Home() {
                                 ? magicReplies.map((magicReply, idx) => {
                                     return (
                                         <tr key={idx}>
-                                            <td>{magicReply}</td>
+                                            <td className="p-2 border border-black">{magicReply}</td>
                                         </tr>
                                     );
                                 })
                                 : <tr>
-                                    <td>Thinking...</td>
+                                    <td className="p-2 border border-black">Thinking...</td>
                                 </tr>
                         }
                     </tbody>
