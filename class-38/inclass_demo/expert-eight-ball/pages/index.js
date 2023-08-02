@@ -18,8 +18,8 @@ export default function Home() {
         const randomReply = replies[Math.floor(Math.random() * replies.length)];
 
         const questionObj = {
-            id: 
-            question:
+            id: magicReplies.length + 1,
+            question: event.target.question.value,
             answer:
         }
 
