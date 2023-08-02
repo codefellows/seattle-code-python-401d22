@@ -1,7 +1,12 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer className="p-4 mt-8 bg-gray-500 text-gray-50">
             <p>Expert Eight Ball &copy;{new Date().getFullYear()}</p>
+            <Link href="/careers">
+                Careers
+            </Link>
         </footer>
     );
 }
