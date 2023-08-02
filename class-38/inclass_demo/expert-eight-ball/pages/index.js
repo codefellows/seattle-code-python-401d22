@@ -20,10 +20,10 @@ export default function Home() {
         const questionObj = {
             id: magicReplies.length + 1,
             question: event.target.question.value,
-            answer:
-        }
+            answer: randomReply,
+        };
 
-        setMagicReplies([...magicReplies, randomReply]);
+        setMagicReplies([...magicReplies, questionObj]);
     }
 
     return(
