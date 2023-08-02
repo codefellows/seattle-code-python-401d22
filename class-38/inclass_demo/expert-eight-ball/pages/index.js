@@ -51,7 +51,9 @@ export default function Home() {
                         {
                             magicReplies.length > 0
                                 ? magicReplies.map()
-                                :
+                                : <tr>
+                                    <td>Thinking...</td>
+                                </tr>
                         }
                     </tbody>
                 </table>
