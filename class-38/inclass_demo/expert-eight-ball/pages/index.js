@@ -1,15 +1,15 @@
-import Head from 'next/head';
-import { replies } from '@/data';
+import Head from "next/head";
+import { replies } from "@/data";
 import { useState } from "react";
 
 // New
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import EightBall from '@/components/EightBall';
-import QuestionForm from '@/components/QuestionForm';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import EightBall from "@/components/EightBall";
+import QuestionForm from "@/components/QuestionForm";
 
 export default function Home() {
-    const [question, setQuestion] = useState('Ask me anything...');
+    const [question, setQuestion] = useState("Ask me anything...");
     const [magicReplies, setMagicReplies] = useState([]);
 
     function questionAskedHandler(event) {
@@ -26,9 +26,8 @@ export default function Home() {
         setMagicReplies([...magicReplies, questionObj]);
     }
 
-    return(
+    return (
         <div>
-
             <Head>
                 <title>Expert 8 Ball</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -38,7 +37,6 @@ export default function Home() {
             <Header />
 
             <main className="flex flex-col items-center py-4 space-y-8">
-
                 {/* QuestionForm */}
                 <QuestionForm questionAskedHandler={questionAskedHandler} />
 
@@ -49,27 +47,38 @@ export default function Home() {
                 <table className="w-1/2 mx-auto my-4 border">
                     <thead>
                         <tr>
+                            <th className="border border-black">Ids:</th>
+                            <th className="border border-black">Questions:</th>
                             <th className="border border-black">Replies:</th>
                         </tr>
                     </thead>
                     <tbody>
                         {/* conditional rendering */}
-                        {
-                            magicReplies.length > 0
-                                ? magicReplies.map((magicReply, idx) => {
-                                    return (
-                                        <tr key={idx}>
-                                            <td className="p-2 border border-black">{magicReply.reply}</td>
-                                        </tr>
-                                    );
-                                })
-                                : <tr>
-                                    <td className="p-2 border border-black">Thinking...</td>
-                                </tr>
-                        }
+                        {magicReplies.length > 0 ? (
+                            magicReplies.map((magicReply, idx) => {
+                                return (
+                                    <tr key={idx}>
+                                        <td className="p-2 border border-black">
+                                            {magicReply.id}
+                                        </td>
+                                        <td className="p-2 border border-black">
+                                            {magicReply.reply}
+                                        </td>
+                                        <td className="p-2 border border-black">
+                                            {magicReply.reply}
+                                        </td>
+                                    </tr>
+                                );
+                            })
+                        ) : (
+                            <tr>
+                                <td className="p-2 border border-black">
+                                    Thinking...
+                                </td>
+                            </tr>
+                        )}
                     </tbody>
                 </table>
-
             </main>
 
             {/* Footer */}
