@@ -45,7 +45,7 @@ export default function Home() {
 
                 {/* Replies(Table) */}
                 {/* Conditional rendering */}
-                { 
+                {magicReplies.length > 0 ? (
                     <table className="w-1/2 mx-auto my-4 border">
                         <thead>
                             <tr>
@@ -76,7 +76,9 @@ export default function Home() {
                             })}
                         </tbody>
                     </table>
-                }
+                ) : (
+                    <h2>Thinking...</h2>
+                )}
             </main>
 
             {/* Footer */}
