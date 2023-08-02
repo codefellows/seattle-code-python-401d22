@@ -4,6 +4,7 @@ import { useState } from "react";
 
 // New
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function Home() {
     const [question, setQuestion] = useState('Ask me anything...');
@@ -48,9 +49,7 @@ export default function Home() {
             </main>
 
             {/* Footer */}
-            <footer className="p-4 mt-8 bg-gray-500 text-gray-50">
-                <p>Expert Eight Ball &copy;{new Date().getFullYear()}</p>
-            </footer>
+            <Footer />
         </div>
     );
 }
