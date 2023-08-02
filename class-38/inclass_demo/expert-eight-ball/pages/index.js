@@ -10,13 +10,14 @@ import QuestionForm from '@/components/QuestionForm';
 
 export default function Home() {
     const [question, setQuestion] = useState('Ask me anything...');
-    const [magicReplies, setMagicReplies] = useState("Thinking...");
+    const [magicReplies, setMagicReplies] = useState([]);
 
     function questionAskedHandler(event) {
         event.preventDefault();
         setQuestion(event.target.question.value);
         const randomReply = replies[Math.floor(Math.random() * replies.length)];
-        setReply(randomReply);
+
+        setMagicReplies(randomReply);
     }
 
     return(
