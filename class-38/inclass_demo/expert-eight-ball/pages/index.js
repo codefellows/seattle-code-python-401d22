@@ -59,7 +59,7 @@ export default function Home() {
                                 ? magicReplies.map((magicReply, idx) => {
                                     return (
                                         <tr key={idx}>
-                                            <td className="p-2 border border-black">{magicReply}</td>
+                                            <td className="p-2 border border-black">{magicReply.reply}</td>
                                         </tr>
                                     );
                                 })
