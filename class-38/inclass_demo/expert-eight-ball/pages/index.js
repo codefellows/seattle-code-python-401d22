@@ -37,7 +37,7 @@ export default function Home() {
                 </form>
 
                 {/* Eight Ball */}
-                
+                <Eightball />
 
                 {/* Answer(Table) */}
                 <p className="text-xl text-center">{reply}</p>
