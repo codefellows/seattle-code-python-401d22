@@ -39,18 +39,18 @@ export default function Home() {
                 {/* Eight Ball */}
                 <EightBall question={question} />
 
-                {/* Answer(Table) */}
+                {/* Replies(Table) */}
                 <table>
                     <thead>
                         <tr>
-                            <th>Answers:</th>
+                            <th>Replies:</th>
                         </tr>
                     </thead>
                     <tbody>
                         {/* conditional rendering */}
                         {
                             magicReplies.length > 0
-                                ? magicReplies.map()
+                                ? magicReplies.map((magicReply))
                                 : <tr>
                                     <td>Thinking...</td>
                                 </tr>
