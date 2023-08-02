@@ -38,7 +38,7 @@ export default function Home() {
                 </form>
 
                 {/* Eight Ball */}
-                <EightBall  />
+                <EightBall question={question} />
 
                 {/* Answer(Table) */}
                 <p className="text-xl text-center">{reply}</p>
