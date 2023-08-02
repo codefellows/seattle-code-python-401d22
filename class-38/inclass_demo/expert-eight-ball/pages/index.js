@@ -44,18 +44,22 @@ export default function Home() {
                 <EightBall question={question} />
 
                 {/* Replies(Table) */}
-                <table className="w-1/2 mx-auto my-4 border">
-                    <thead>
-                        <tr>
-                            <th className="border border-black">Ids:</th>
-                            <th className="border border-black">Questions:</th>
-                            <th className="border border-black">Replies:</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {/* conditional rendering */}
-                        {
-                            magicReplies.map((magicReply, idx) => {
+                {/* Conditional rendering */}
+                { 
+                    <table className="w-1/2 mx-auto my-4 border">
+                        <thead>
+                            <tr>
+                                <th className="border border-black">Ids:</th>
+                                <th className="border border-black">
+                                    Questions:
+                                </th>
+                                <th className="border border-black">
+                                    Replies:
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {magicReplies.map((magicReply, idx) => {
                                 return (
                                     <tr key={idx}>
                                         <td className="p-2 border border-black">
@@ -69,9 +73,10 @@ export default function Home() {
                                         </td>
                                     </tr>
                                 );
-                            })
-                    </tbody>
-                </table>
+                            })}
+                        </tbody>
+                    </table>
+                }
             </main>
 
             {/* Footer */}
