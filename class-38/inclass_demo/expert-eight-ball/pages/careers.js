@@ -6,7 +6,7 @@ export default function Careers() {
             <section className="space-y-4">
                 <h1 className="text-4xl">Careers Page</h1>
                 <Link href="/">
-                    <a className="block text-center underline">Return Home</a>
+                    Return Home
                 </Link>
             </section>
         </div>
