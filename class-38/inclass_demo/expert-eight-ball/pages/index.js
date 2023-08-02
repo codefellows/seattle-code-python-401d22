@@ -40,7 +40,7 @@ export default function Home() {
                 <EightBall question={question} />
 
                 {/* Answer(Table) */}
-                <p className="text-xl text-center">{reply}</p>
+                <p className="text-xl text-center">{magicReplies}</p>
 
             </main>
 
