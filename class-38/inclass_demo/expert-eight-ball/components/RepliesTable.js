@@ -1,6 +1,7 @@
-export default function RepliesTable() {
+export default function RepliesTable({ magicReplies }) {
     return (
-        {magicReplies.length > 0 ? (
+        {
+            magicReplies.length > 0 ? (
             <table className="w-1/2 mx-auto my-4 border">
                 <thead>
                     <tr>
