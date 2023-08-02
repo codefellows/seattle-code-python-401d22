@@ -52,10 +52,10 @@ export default function Home() {
                             magicReplies.length > 0
                                 ? magicReplies.map((magicReply, idx) => {
                                     return (
-                                        <tr>
+                                        <tr key={idx}>
                                             <td>{magicReply}</td>
                                         </tr>
-                                    )
+                                    );
                                 })
                                 : <tr>
                                     <td>Thinking...</td>
