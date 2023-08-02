@@ -41,8 +41,12 @@ export default function Home() {
 
                 {/* Answer(Table) */}
                 <table>
-                    
+                    <thead>
 
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
                 </table>
 
             </main>
