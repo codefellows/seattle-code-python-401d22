@@ -1,4 +1,4 @@
-export default function QuestionForm() {
+export default function QuestionForm({ questionAskedHandler }) {
     return (
         <form
             className="flex w-1/2 p-2 my-4 bg-gray-200 mx-auto"
