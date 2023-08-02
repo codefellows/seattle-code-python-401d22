@@ -10,7 +10,7 @@ import QuestionForm from '@/components/QuestionForm';
 
 export default function Home() {
     const [question, setQuestion] = useState('Ask me anything...');
-    const [replies, setReplies] = useState("Thinking...");
+    const [magicReplies, setMagicReplies] = useState("Thinking...");
 
     function questionAskedHandler(event) {
         event.preventDefault();
