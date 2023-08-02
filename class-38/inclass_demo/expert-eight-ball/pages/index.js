@@ -22,9 +22,7 @@ export default function Home() {
             </Head>
 
             {/* Header */}
-            <header className="flex items-center justify-between p-4 bg-gray-500 text-gray-50">
-                <h1 className="text-4xl">Expert 8 Ball</h1>
-            </header>
+
 
             <main className="flex flex-col items-center py-4 space-y-8">
 
