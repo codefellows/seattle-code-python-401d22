@@ -17,6 +17,8 @@ export default function Home() {
         setQuestion(event.target.question.value);
         const randomReply = replies[Math.floor(Math.random() * replies.length)];
 
+        
+
         setMagicReplies([...magicReplies, randomReply]);
     }
 
