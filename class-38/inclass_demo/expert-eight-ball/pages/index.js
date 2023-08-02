@@ -34,7 +34,7 @@ export default function Home() {
             </Head>
 
             {/* Header */}
-            <Header />
+            <Header answerCount={magicReplies.length} />
 
             <main className="flex flex-col items-center py-4 space-y-8">
                 {/* QuestionForm */}
